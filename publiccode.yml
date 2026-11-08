@@ -1,0 +1,47 @@
+publiccodeYmlVersion: "0.4"
+
+name: GTFS.zone Wifi App
+url: "https://github.com/gtfs-zone/gtfs-zone-wifi-app"
+landingURL: "https://wifi.gtfs.zone"
+
+platforms:
+  - android
+
+categories:
+  - data-collection
+
+developmentStatus: concept
+
+softwareType: "standalone/mobile"
+
+description:
+  en:
+    shortDescription: >
+      An Android app that records onboard and station wifi, cell coverage and amenities on transit trips.
+    longDescription: >
+      GTFS.zone Wifi App records what connectivity a rider actually gets on a
+      transit trip. The rider picks their trip from nearby departures; while
+      it is active the app logs location, wifi and cell information and runs
+      light network tests. Riders can also report seat outlets, wifi status,
+      captive portal details and station wifi. Sessions are stored offline
+      and uploaded anonymously to wifi.gtfs.zone.
+    features:
+      - Manual trip pick from nearby departures
+      - Wifi, cell and network test logging during a trip
+      - Outlet, wifi and captive portal reports
+      - Station wifi checklist
+      - Anonymous offline-first upload
+
+legal:
+  license: AGPL-3.0-or-later
+
+maintenance:
+  type: community
+  contacts:
+    - name: Max Katz-Christy
+      email: maxkatzchristy@gmail.com
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en
