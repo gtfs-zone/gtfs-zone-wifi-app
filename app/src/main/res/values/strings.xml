@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">wifi.gtfs.zone</string>
+    <string name="channel_recording">Recording</string>
+    <string name="recording_title">Recording a session</string>
+    <string name="recording_text">Sampling location, wifi and cell every 10 s</string>
+    <string name="end_session">End session</string>
+
+    <string name="perm_intro">The app records location, wifi and cell signal while a trip or station session is active. Nothing is recorded outside a session, and uploads carry no account or device id.</string>
+    <string name="perm_location">Precise location</string>
+    <string name="perm_location_reason">Places each sample along the trip and lets Android report the wifi and cell you are connected to.</string>
+    <string name="perm_wifi">Nearby wifi devices</string>
+    <string name="perm_wifi_reason">Reads the connected wifi network name and signal.</string>
+    <string name="perm_notifications">Notifications</string>
+    <string name="perm_notifications_reason">Shows the ongoing notification while a session records, with a button to end it.</string>
+    <string name="perm_service">Location foreground service</string>
+    <string name="perm_service_reason">Recording runs as a location foreground service while the session is active, so it keeps going with the screen off. Location must be turned on.</string>
+    <string name="perm_missing">Some permissions are missing.</string>
+    <string name="set_up_permissions">Set up permissions</string>
+    <string name="grant">Grant</string>
+    <string name="granted">Granted</string>
+    <string name="open_settings">App settings</string>
+    <string name="turn_on_location">Turn on location</string>
+    <string name="done">Done</string>
+
+    <string name="start_trip">Start trip</string>
+    <string name="at_station">At a station</string>
+    <string name="open_sessions">Open sessions</string>
+    <string name="sessions">Sessions</string>
+    <string name="retry">Retry</string>
+    <string name="no_stops">No stops found nearby.</string>
+    <string name="no_departures">No upcoming departures.</string>
+    <string name="track">track %1$s</string>
+    <string name="pick_alighting">Where do you get off?</string>
+    <string name="car_number">Car number (optional)</string>
+    <string name="travel_class">Class (optional)</string>
+
+    <string name="started_at">Started %1$s</string>
+    <string name="samples_count">Samples: %1$d</string>
+    <string name="no_sample_yet">Waiting for a location fix</string>
+    <string name="sample_line">wifi %1$s, cell %2$s, accuracy %3$d m</string>
+    <string name="no_test_yet">No network test yet</string>
+    <string name="test_ok">%1$s reachable, %2$d ms, fetch %3$s ms</string>
+    <string name="test_portal">%1$s behind a captive portal</string>
+    <string name="test_unreachable">%1$s unreachable</string>
+    <string name="submit">Submit</string>
+    <string name="submit_hint">Submitting trims the recording to the trip or station and queues it for upload on unmetered wifi. The untrimmed recording is deleted.</string>
+    <string name="state_line">%1$s. Samples: %2$d, network tests: %3$d</string>
+    <string name="delete_session">Delete session</string>
+
+    <string name="reports">Reports</string>
+    <string name="report_outlets">Outlets at the seat</string>
+    <string name="report_wifi">Onboard wifi</string>
+    <string name="report_portal">Wifi login</string>
+    <string name="report_data_cap">Data cap</string>
+    <string name="report_vpn_blocked">VPN blocked</string>
+    <string name="checklist">Station wifi needed</string>
+    <string name="check_email">Email</string>
+    <string name="check_account">Full account</string>
+    <string name="check_sms">SMS</string>
+    <string name="check_checkbox">Checkbox</string>
+    <string name="check_password">Password</string>
+    <string name="check_payment">Payment</string>
+    <string name="check_could_not_connect">Could not get it to work</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <string name="state_recording">recording</string>
+    <string name="state_ended">ended, not submitted</string>
+    <string name="state_queued">queued</string>
+    <string name="state_sent">sent</string>
+    <string name="state_rejected">rejected</string>
+    <string name="upload_now">Upload now</string>
+    <string name="upload_hint">Uploads queued sessions on any network, mobile data included.</string>
+    <string name="queued_sent">Queued: %1$d, sent: %2$d</string>
+    <string name="about">Version %1$s, uploads to %2$s</string>
+</resources>

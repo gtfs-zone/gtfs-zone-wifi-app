@@ -1,0 +1,71 @@
+name: Check
+
+# On a push to a branch or a pull request: runs ./gradlew check and builds the
+# debug APK. On a pull request it also rejects any commit whose message is not
+# a Conventional Commit; the commit-msg hook does the same locally but can be
+# skipped.
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Java
+        uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      # Verifies the wrapper checksum and caches Gradle downloads.
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
+
+      # The runner image ships an Android SDK at ANDROID_HOME with its licenses
+      # accepted, so AGP can download the platform it needs.
+      - name: Check and build
+        run: ./gradlew --console=plain check assembleDebug
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 14
+
+  commits:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      # Full history and the PR head, not the merge commit, so only the PR's
+      # own commits are in the range.
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+
+      # Same commitizen version as the commit-msg hook in .pre-commit-config.yaml.
+      - name: Check commit messages
+        run: uvx --from commitizen==4.13.9 cz check --rev-range "origin/${BASE_REF}..HEAD"
+        env:
+          BASE_REF: ${{ github.base_ref }}

@@ -1,0 +1,171 @@
+[
+ {
+  "name": "Berlin Hbf (tief)",
+  "stopId": "sk-zsr_8098160",
+  "importance": 0.03639643266797066,
+  "lat": 52.526443,
+  "lon": 13.369538000000002,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "LONG_DISTANCE"
+  ]
+ },
+ {
+  "name": "Berlin Hbf (Tief)",
+  "stopId": "hu-mav_1:008031922_0",
+  "parentId": "hu-mav_1:008031922",
+  "importance": 0.03639643266797066,
+  "lat": 52.52555500000001,
+  "lon": 13.369444000000003,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "LONG_DISTANCE",
+   "NIGHT_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "nl-OpenOV_4195237",
+  "parentId": "nl-OpenOV_stoparea:574118",
+  "importance": 0.03639643266797066,
+  "lat": 52.525467,
+  "lon": 13.369415000000002,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "scheduledTrack": "6",
+  "track": "6",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "HIGHSPEED_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "nl-OpenOV_4195235",
+  "parentId": "nl-OpenOV_stoparea:574118",
+  "importance": 0.03639643266797066,
+  "lat": 52.525414000000005,
+  "lon": 13.369122500000001,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "scheduledTrack": "4",
+  "track": "4",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "HIGHSPEED_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "nl-OpenOV_4195234",
+  "parentId": "nl-OpenOV_stoparea:574118",
+  "importance": 0.03639643266797066,
+  "lat": 52.525380000000006,
+  "lon": 13.368912,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "scheduledTrack": "3",
+  "track": "3",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "HIGHSPEED_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "dk-rejseplanen_000008031922",
+  "importance": 0.03639643266797066,
+  "lat": 52.52555500000001,
+  "lon": 13.369444000000003,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "HIGHSPEED_RAIL",
+   "NIGHT_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "dk-rejseplanen_000008010100",
+  "importance": 0.03639643266797066,
+  "lat": 52.525560000000006,
+  "lon": 13.369450000000002,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "NIGHT_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hbf",
+  "stopId": "eu-european-sleeper_8065969",
+  "importance": 0.03639643266797066,
+  "lat": 52.524944,
+  "lon": 13.369661,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "NIGHT_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Central Station (FlixTrain)",
+  "stopId": "eu-flixbus_394a5408-d778-4959-a63e-973253443ed2",
+  "importance": 0.03639643266797066,
+  "lat": 52.525063,
+  "lon": 13.369438000000002,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "stopCode": "BL",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "LONG_DISTANCE"
+  ]
+ },
+ {
+  "name": "Berlin Central Station (Invalidenstra\u00dfe)",
+  "stopId": "eu-flixbus_88d83aa4-8f95-41f1-a3b6-d4d6152fca40",
+  "importance": 0.03639643266797066,
+  "lat": 52.526875000000004,
+  "lon": 13.368549000000002,
+  "tz": "Europe/Berlin",
+  "stopCode": "BLB",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "COACH"
+  ]
+ },
+ {
+  "name": "Berlin Hbf-Lehrter Bahnhof Nord",
+  "stopId": "fr-horaires-sncf_FR::LMO:a25f6be0-337a-11e9-b154-294c36c22c4f:",
+  "importance": 0.03639643266797066,
+  "lat": 52.52513000000001,
+  "lon": 13.369250000000001,
+  "level": -2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "HIGHSPEED_RAIL"
+  ]
+ },
+ {
+  "name": "Berlin Hauptbahnhof",
+  "stopId": "no-Entur_NSR:Quay:111105",
+  "parentId": "no-Entur_NSR:StopPlace:64116",
+  "importance": 0.03639643266797066,
+  "lat": 52.524937,
+  "lon": 13.3688,
+  "level": 2.0,
+  "tz": "Europe/Berlin",
+  "vertexType": "TRANSIT",
+  "modes": [
+   "NIGHT_RAIL"
+  ]
+ }
+]
